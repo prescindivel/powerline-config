@@ -10,10 +10,6 @@
 				}
 			},
 			{
-				"function": "powerline.segments.common.players.spotify_apple_script",
-				"name": "player"
-			},
-			{
 				"function": "powerline.segments.common.net.network_load",
 				"args": {
 					"si_prefix": true,
@@ -24,6 +20,7 @@
 			{
 				"function": "powerline.segments.common.wthr.weather",
 				"args": {
+					"interval": 10,
 					"unit": "C",
 					"location_query": "<your-query>",
 					"temp_coldest": 25,
@@ -34,7 +31,6 @@
 						"rainy": "☔",
 						"cloudy": "☁",
 						"snowy": "❆",
-						"stormy": "☈",
 						"sunny": "☼",
 						"night": "☾"
 					}
