@@ -1,5 +1,7 @@
 # my powerline configs
 
+![screenshot](Screen%20Shot%202018-03-02%20at%2010.53.06.png "screenshot")
+
 ## requirements:
 - [powerline](http://powerline.readthedocs.io/en/master/installation.html)
 - [patched fonts](https://github.com/powerline/fonts)
