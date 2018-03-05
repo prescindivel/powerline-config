@@ -2,14 +2,6 @@
 	"segments": {
 		"right": [
 			{
-				"function": "powerline.segments.common.mail.email_imap_alert",
-				"before": "✉ ",
-				"args": {
-					"username": "<your-gmail-user>",
-					"password": "<your-pass-user>"
-				}
-			},
-			{
 				"function": "powerline.segments.common.net.network_load",
 				"args": {
 					"si_prefix": true,
@@ -18,12 +10,20 @@
 				}
 			},
 			{
+				"function": "powerline.segments.common.mail.email_imap_alert",
+				"before": "@ ",
+				"args": {
+					"username": "<gmail-user>",
+					"password": "<gmail-pass>"
+				}
+			},
+			{
 				"function": "powerline.segments.common.wthr.weather",
 				"args": {
 					"interval": 10,
 					"unit": "C",
-					"location_query": "<your-query>",
-					"temp_coldest": 25,
+					"location_query": "fortaleza, ceara",
+					"temp_coldest": 22,
 					"temp_hottest": 34,
 					"icons": {
 						"day": "〇",
@@ -32,9 +32,13 @@
 						"cloudy": "☁",
 						"snowy": "❆",
 						"sunny": "☼",
+						"stormy": "\u26C8",
 						"night": "☾"
 					}
 				}
+			},
+			{
+				"function": "powerline.segments.common.net.hostname"
 			}
 		]
 	}
